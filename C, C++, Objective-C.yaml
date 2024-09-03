@@ -8,10 +8,13 @@ attributes:
 - beginString: '#if'
 - beginString: '#ifdef'
 - beginString: '#ifndef'
+- beginString: '#elifdef'
+- beginString: '#elifndef'
 - beginString: '#include'
 - beginString: '#line'
 - beginString: '#pragma'
 - beginString: '#undef'
+- beginString: '#warning'
 characters:
 - beginString: ''''
   endString: ''''
@@ -665,14 +668,21 @@ keywords:
 - beginString: case
 - beginString: catch
 - beginString: char
+- beginString: char8_t
 - beginString: char16_t
 - beginString: char32_t
 - beginString: class
 - beginString: compl
+- beginString: concept
 - beginString: const
-- beginString: const_cast
+- beginString: constinit
+- beginString: consteval
 - beginString: constexpr
+- beginString: const_cast
 - beginString: continue
+- beginString: co_await
+- beginString: co_return
+- beginString: co_yield
 - beginString: decltype
 - beginString: default
 - beginString: delete
@@ -689,12 +699,14 @@ keywords:
 - beginString: goto
 - beginString: if
 - beginString: inline
+- beginString: likely
 - beginString: mutable
 - beginString: namespace
 - beginString: new
 - beginString: noexcept
 - beginString: not
 - beginString: not_eq
+- beginString: no_unique_address
 - beginString: nullptr
 - beginString: operator
 - beginString: or
@@ -705,6 +717,7 @@ keywords:
 - beginString: register
 - beginString: restrict
 - beginString: reinterpret_cast
+- beginString: requires
 - beginString: return
 - beginString: signed
 - beginString: sizeof
@@ -723,6 +736,7 @@ keywords:
 - beginString: typeid
 - beginString: typename
 - beginString: union
+- beginString: unlikely
 - beginString: unsigned
 - beginString: using
 - beginString: virtual
